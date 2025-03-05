@@ -1,4 +1,4 @@
-import {Api} from "./api.service"
+import Api from "./api.service"
 
 export default{
     login: (credenciales) => {

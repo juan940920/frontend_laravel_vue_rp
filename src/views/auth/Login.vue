@@ -29,7 +29,8 @@ async function funIngresar(){
         const {data} = await authService.login(credenciales.value)
         console.log(data.access_token)
         localStorage.setItem("access_token", data.access_token)
-        router.push("/nosotros")
+        router.push({name: "MiPerfil"})
+        
     }catch (error){
         alert("Error")
     }
